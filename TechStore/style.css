@@ -1,0 +1,80 @@
+/* Base Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Grid Layout */
+.catalogue-grid {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* Responsive adjust */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGadget Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>TechStore</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search gadgets...">
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul class="filter-list">
+                <li><button class="filter-btn" data-category="all">All</button></li>
+                <li><button class="filter-btn" data-category="laptop">Laptops</button></li>
+                <li><button class="filter-btn" data-category="audio">Audio</button></li>
+            </ul>
+        </aside>
+
+        <main class="catalogue-grid" id="productGrid">
+            <article class="product-card" data-category="laptop">
+                <img src="/imgs/Used-MacBook-Pro-13-3-Laptop-Apple-M1-chip-8GB-Memory-256GB-SSD-Latest-Model-Space-Gray-MYD82LL-A-Grade-B_362e1889-6bac-42e0-89ed-285d34190d76.d7f7af2483314f8e3e86948f0502ff09.avif" alt="Pro Laptop">
+                <h2 class="product-title">Pro Laptop 15"</h2>
+                <p class="product-price">$1,200</p>
+            </article>
+
+            <article class="product-card" data-category="audio">
+                <img src="/imgs/I62Pink-1.webp" alt="Wireless Headphones">
+                <h2 class="product-title">Wireless Headphones</h2>
+                <p class="product-price">$250</p>
+            </article>
+
+            <article class="product-card" data-category="laptop">
+                <img src="/imgs/Periphio-Terra-Prebuilt-Gaming-PC-H__95252.webp" alt="Gaming Rig">
+                <h2 class="product-title">Gaming Rig</h2>
+                <p class="product-price">$2,500</p>
+            </article>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
